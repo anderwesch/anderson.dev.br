@@ -22,6 +22,12 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;600;700;800&display=swap"
+            rel="stylesheet"
+          />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
         <body className="bg-white text-black antialiased dark:bg-black dark:text-white">

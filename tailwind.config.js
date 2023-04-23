@@ -30,7 +30,7 @@ module.exports = {
       },
       fontFamily: {
         //@ts-ignore
-        sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
+        sans: ['Be Vietnam Pro', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.rose,
