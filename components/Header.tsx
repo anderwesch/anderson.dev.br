@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
 import Link from './Link'
 import ThemeSwitch from './ThemeSwitch'
 import headerNavLinks from '@/data/headerNavLinks'
@@ -21,14 +20,8 @@ function useIsScrollTop() {
 }
 
 export default function Header() {
-  const router = useRouter()
   const [navShow, setNavShow] = useState(false)
-  const { locale, locales, defaultLocale } = router
   const isTop = useIsScrollTop()
-
-  const changeLanguage = (locale) => {
-    router.push(router.asPath, router.asPath, { locale })
-  }
 
   const onToggleNav = () => {
     setNavShow((status) => {
@@ -45,10 +38,8 @@ export default function Header() {
     <>
       <header
         className={`fixed w-full bg-transparent ${
-          isTop
-            ? 'border-none'
-            : 'border-b border-gray-200 dark:border-gray-800 '
-        } top-0 z-30 flex items-center justify-between py-3 bg-white dark:bg-black bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100`}
+          isTop ? 'border-none' : 'border-b border-gray-200 dark:border-gray-800 '
+        } firefox:bg-opacity-100 dark:firefox:bg-opacity-100 top-0 z-30 flex items-center justify-between py-3 bg-white dark:bg-black bg-opacity-30 backdrop-blur-lg dark:bg-opacity-30`}
       >
         <nav className="mx-auto flex w-full max-w-3xl sm:max-w-5xl items-center justify-between px-2 py-2 xl:px-0">
           <div className="flex w-full items-center justify-between text-base leading-5">
