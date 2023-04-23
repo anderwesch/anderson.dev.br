@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Ander Blog',
+  title: 'Anderson - Software Architect',
   author: 'Anderson Weschnhoski',
   headerTitle: 'Ander',
-  description: 'I am a software architect',
+  description: 'A Software Architect that build things for the web',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
