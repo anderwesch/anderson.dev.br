@@ -24,7 +24,7 @@ const SocialIcon = ({ kind, href, size = 8 }) => {
 
   return (
     <a
-      className="text-sm text-gray-500 transition hover:text-gray-600"
+      className={`text-sm text-gray-500 transition hover:text-gray-600 h-${size} w-${size}`}
       target="_blank"
       rel="noopener noreferrer"
       href={href}

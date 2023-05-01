@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
+import siteMetadata from '@/data/siteMetadata'
+import Logo from '@/data/logo.svg'
 import Link from './Link'
 import ThemeSwitch from './ThemeSwitch'
+import MobileNav from './MobileNav'
 import headerNavLinks from '@/data/headerNavLinks'
 
 function useIsScrollTop() {
@@ -20,14 +23,15 @@ function useIsScrollTop() {
 }
 
 export default function Header() {
-  const [navShow, setNavShow] = useState(false)
   const isTop = useIsScrollTop()
+  const [navShow, setNavShow] = useState(false)
 
   const onToggleNav = () => {
     setNavShow((status) => {
       if (status) {
         document.body.style.overflow = 'auto'
       } else {
+        // Prevent scrolling
         document.body.style.overflow = 'hidden'
       }
       return !status
@@ -43,25 +47,36 @@ export default function Header() {
       >
         <nav className="mx-auto flex w-full max-w-3xl sm:max-w-5xl items-center justify-between px-2 py-2 xl:px-0">
           <div className="flex w-full items-center justify-between text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-2 font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 xl:first:pl-0 sm:py-4 sm:px-3"
-                >
-                  {link.title}
-                </Link>
-              ))}
+            <div>
+              <Link href="/" aria-label={siteMetadata.headerTitle}>
+                <div className="flex items-center justify-between">
+                  <div className="mr-3">
+                    <Logo />
+                  </div>
+                </div>
+              </Link>
             </div>
-            <div className="flex">
-              <ThemeSwitch />
+            <div className='flex items-center text-base leading-5'>
+              <div className="hidden sm:block">
+                {headerNavLinks.map((link) => (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className="p-2 font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 xl:first:pl-0 sm:py-4 sm:px-3"
+                  >
+                    {link.title}
+                  </Link>
+                ))}
+              </div>
+              <div className="flex">
+                <ThemeSwitch />
+              </div>
             </div>
           </div>
           <div className="sm:hidden">
             <button
               type="button"
-              className="ml-1 mr-1 h-8 w-8 rounded"
+              className="ml-1 mr-1 h-8 w-8 rounded py-1"
               aria-label="Toggle Menu"
               onClick={onToggleNav}
             >
@@ -69,7 +84,7 @@ export default function Header() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                className="text-gray-900 dark:text-gray-100"
               >
                 {navShow ? (
                   <path
@@ -89,6 +104,7 @@ export default function Header() {
           </div>
         </nav>
       </header>
+      <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
     </>
   )
 }

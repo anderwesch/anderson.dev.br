@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="344.5639097744361 330.27819548872174 111.73684210526318 91.21804511278197" width="53.87" height="43.61"><defs><path d="M453.3 331.28L453.3 359.85L388.64 418.5L388.64 388.42L453.3 331.28Z" id="aFZf6T5ED"></path><linearGradient id="gradientb2ThqnP5Op" gradientUnits="userSpaceOnUse" x1="420.97" y1="331.28" x2="420.97" y2="418.5"><stop style="stop-color: #06b6d4;stop-opacity: 1" offset="0%"></stop><stop style="stop-color: #67e8f9;stop-opacity: 1" offset="100%"></stop></linearGradient><path d="M410.23 331.28L410.23 359.85L345.56 418.5L345.56 388.42L410.23 331.28Z" id="a9fehgwfM"></path><linearGradient id="gradientk1wNV9Ostb" gradientUnits="userSpaceOnUse" x1="377.89" y1="331.28" x2="377.89" y2="418.5"><stop style="stop-color: #06b6d4;stop-opacity: 1" offset="0%"></stop><stop style="stop-color: #67e8f9;stop-opacity: 1" offset="100%"></stop></linearGradient></defs><g><g><use xlink:href="#aFZf6T5ED" opacity="1" fill="url(#gradientb2ThqnP5Op)"></use></g><g><use xlink:href="#a9fehgwfM" opacity="1" fill="url(#gradientk1wNV9Ostb)"></use></g></g></svg>
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  preserveAspectRatio="xMidYMid meet" width="53.87" height="43.61"
+		viewBox="0 0 50.4 43.6" xml:space="preserve">
+	<style type="text/css">
+		.st0{fill:#BB0A37;}
+	</style>
+	<g>
+		<path class="st0" d="M16.4,28.3c0.1,0.1,0.1,0.1,0.2,0l2-3.4c0-0.1,0-0.1,0-0.2L17,21.9c0-0.1,0-0.1,0-0.2l1.5-2.6l6.6-11.5
+			c0.1-0.2,0.2-0.2,0.3,0l8.1,14.1c0,0.1,0,0.1,0,0.2l-1.6,2.7c-0.1,0.1-0.1,0.2,0,0.3l2,3.4c0,0.1,0.1,0.1,0.2,0l3.7-6.4
+			c0-0.1,0-0.1,0-0.2L25.3,0c0-0.1-0.1-0.1-0.1,0L14.3,18.9l-1.5,2.6c-0.1,0.2-0.1,0.5,0,0.7L16.4,28.3z"/>
+		<path class="st0" d="M50.3,43.4l-3.3-5.6l-7.8-13.6c0-0.1-0.1-0.1-0.1,0l-2,3.5c0,0.1,0,0.1,0,0.2l4.6,8c0.1,0.2,0.1,0.2-0.1,0.1
+			l-2.6-1l-5-2c-0.1,0-0.2-0.1-0.2-0.2l-8.5-14.7c-0.1,0-0.1,0-0.2,0.1l-8.4,14.6c-0.1,0.1-0.1,0.2-0.2,0.2l-2.9,1.2l-4.8,1.9
+			c-0.2,0.1-0.2,0-0.1-0.1l4.6-8c0.1-0.1,0.1-0.2,0-0.3l-2-3.5c0-0.1-0.1-0.1-0.1,0L0,43.5c0,0.1,0,0.1,0.1,0.1l15.5-6.2L19,36
+			c0.1,0,0.2-0.1,0.3-0.2l5.8-10.1c0.1-0.1,0.2-0.1,0.2,0l5.9,10.2c0,0.1,0.1,0.1,0.2,0.1l4.9,1.9l7.9,3.2l6,2.4
+			C50.4,43.6,50.4,43.6,50.3,43.4z"/>
+	</g>
+</svg>
