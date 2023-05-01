@@ -6,7 +6,7 @@ const MobileNav = ({ navShow, onToggleNav }) => {
   return (
     <div className="sm:hidden">
       <div
-        className={`fixed w-full h-screen top-[71px] right-0 bg-white dark:bg-gray-800 z-40 ease-in-out duration-500 ${
+        className={`fixed w-full h-screen top-[71px] right-0 bg-white dark:bg-black bg-opacity-30 backdrop-blur-lg dark:bg-opacity-30 z-40 ease-in-out duration-500 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         } firefox:bg-opacity-100·dark:firefox:bg-opacity-100·bg-opacity-30·dark:bg-opacity-30·backdrop-blur-lg`}
       >
