@@ -56,7 +56,7 @@ export default function Header() {
                 </div>
               </Link>
             </div>
-            <div className='flex items-center text-base leading-5'>
+            <div className="flex items-center text-base leading-5">
               <div className="hidden sm:block">
                 {headerNavLinks.map((link) => (
                   <Link
